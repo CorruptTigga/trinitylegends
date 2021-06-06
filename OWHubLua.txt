@@ -73,7 +73,7 @@ end
 function newCode()
   local btn = {}  btn.width = 0  btn.height = 0  btn.label = ""  btn.index = 9  self.editButton(btn)
   WebRequest.get("https://sites.google.com/site/rolesystems/wBaseLua.txt", self, "cbWBLua")
-  WebRequest.get("https://sites.google.com/site/rolesystems/OWHubLua.txt", self, "cbHubLua")
+  WebRequest.get("https://github.com/CorruptTigga/trinitylegends/blob/main/OWHubLua.txt", self, "cbHubLua")
 end
 function cbWBLua(a)  wBase.setLuaScript(a.text)  wBase.reload()  end
 function cbHubLua(a)  self.setDescription(string.sub(cbp, 2))
