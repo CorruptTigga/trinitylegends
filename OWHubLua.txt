@@ -452,10 +452,10 @@ function cbGetBase(a)
     rotBase()  setTxt()  setBtn()  rollBack({a.guid})  local v = {}
     if wpx and wpx != wBase.getDescription() then  v.image = a.getCustomObject().image  vBase.setPosition({0, gh, 0})
     else  local n = 18.09/1.85  local x = a.getScale().x  local z = a.getScale().z
-      if x == z then x = 18.09  z = 18.09  else  x = x * 36  z = z * 36  end  wBase.setScale({x/n, 1, z/n})
+      if x == z then x = 52  z = 52  else  x = x * 36  z = z * 36  end  wBase.setScale({18.09/n, 1, 18.09/n})
       local w = {}  w.image = a.getCustomObject().image  wBase.setCustomObject(w)  wBase.reload()
       if pxy then v.image = sBase.getCustomObject().image  vBase.setPosition({0, -0.91, 0})  vBase.setScale({40, 1, 40})
-      else  vBase.setScale({x, 1, z})  v.image = a.getCustomObject().image  vBase.setPosition({0, gh, 0})  end
+      else  vBase.setScale({52, 1, 52})  v.image = a.getCustomObject().image  vBase.setPosition({0, gh, 0})  end
     end
     vBase.setCustomObject(v)  vBase.reload()  cbOn({"cbTObj"})
 end
